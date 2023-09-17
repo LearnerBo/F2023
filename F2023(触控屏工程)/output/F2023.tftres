@@ -1,0 +1,10 @@
+<Resource>
+    <pages>
+        <page name="Screen0" id="0" />
+    </pages>
+    <images>
+        <image id="0" url="c:\users\86152\desktop\f2023声源\f2023\images\坐标显示界面.bmp" effect_width="800" effect_height="480" />
+        <image id="1" url="c:\users\86152\desktop\f2023声源\f2023\images\按下显示.bmp" effect_width="800" effect_height="480" />
+    </images>
+    <waves />
+</Resource>
