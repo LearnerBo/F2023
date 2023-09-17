@@ -1,0 +1,450 @@
+[2023-08-02 16:52:47]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol MY_NVIC_Init (referred from DAC.o).
+Error: L6218E: Undefined symbol TIM_DAC_DMA_Config (referred from main.o).
+Error: L6218E: Undefined symbol generate_sine_wave_table (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 3 error messages.
+
+
+[2023-08-02 16:53:42]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol MY_NVIC_PriorityGroupConfig (referred from DAC.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2023-08-02 16:54:27]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol MY_NVIC_PriorityGroupConfig (referred from DAC.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2023-08-02 16:55:01]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol MY_NVIC_PriorityGroupConfig (referred from DAC.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2023-08-02 16:58:36]	compilation failed at : "c:\Users\86152\Desktop\Github合作项目\STM32F4-1.1\STM32F4-1.1\User\main.c", exit code: 1
+command: 
+  "C:\KEIL_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../System -I../Satrt -I../Libarary -I../System/delay -I../System/sys -I../System/usart -I../Hardware -I../DSP_Lib -I../TouchScreen -I../AD7606 -I../DSP_Lib/Include -I../OS -I../Peripheral -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING --cpu Cortex-M4.fp --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\main.o" --no_depend_system_headers --depend ".\build\Target 1\main.d" .\main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+"../Hardware/DAC.h", line 12: Warning:  #47-D: incompatible redefinition of macro "PI" (declared at line 301 of "../DSP_Lib/Include/arm_math.h")
+  #define PI 3.1415926
+          ^
+".\main.c", line 44: Error:  #165: too few arguments in function call
+  	DAC_Init();
+  	         ^
+.\main.c: 1 warning, 1 error
+
+[2023-08-02 17:05:14]	[done]
+	build successfully !
+
+[2023-08-02 19:11:01]	compilation failed at : "c:\Users\86152\Desktop\Github合作项目\STM32F4-1.1\STM32F4-1.1\Hardware\DAC.c", exit code: 1
+command: 
+  "C:\KEIL_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../System -I../Satrt -I../Libarary -I../System/delay -I../System/sys -I../System/usart -I../Hardware -I../DSP_Lib -I../TouchScreen -I../AD7606 -I../DSP_Lib/Include -I../OS -I../Peripheral -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING --cpu Cortex-M4.fp --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\__\Hardware\DAC.o" --no_depend_system_headers --depend ".\build\Target 1\__\Hardware\DAC.d" .\..\Hardware\DAC.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\DAC.h", line 18: Error:  #147-D: declaration is incompatible with "void TIM6_Init(void)" (declared at line 14)
+  void TIM6_Init(u16 arr, u16 psc);
+       ^
+".\..\Hardware\DAC.c", line 99: Warning:  #177-D: variable "NVIC_InitStructure" was declared but never referenced
+      NVIC_InitTypeDef NVIC_InitStructure;
+                       ^
+".\..\Hardware\DAC.c", line 151: Error:  #20: identifier "sinTable" is undefined
+  	DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)&sinTable;
+  	                                                   ^
+.\..\Hardware\DAC.c: 1 warning, 2 errors
+
+[2023-08-02 19:11:57]	compilation failed at : "c:\Users\86152\Desktop\Github合作项目\STM32F4-1.1\STM32F4-1.1\Hardware\DAC.c", exit code: 1
+command: 
+  "C:\KEIL_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../System -I../Satrt -I../Libarary -I../System/delay -I../System/sys -I../System/usart -I../Hardware -I../DSP_Lib -I../TouchScreen -I../AD7606 -I../DSP_Lib/Include -I../OS -I../Peripheral -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING --cpu Cortex-M4.fp --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\__\Hardware\DAC.o" --no_depend_system_headers --depend ".\build\Target 1\__\Hardware\DAC.d" .\..\Hardware\DAC.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\DAC.c", line 99: Warning:  #177-D: variable "NVIC_InitStructure" was declared but never referenced
+      NVIC_InitTypeDef NVIC_InitStructure;
+                       ^
+".\..\Hardware\DAC.c", line 151: Error:  #20: identifier "sinTable" is undefined
+  	DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)&sinTable;
+  	                                                   ^
+.\..\Hardware\DAC.c: 1 warning, 1 error
+
+[2023-08-02 19:12:21]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol DACFre_Config (referred from OS_Task.o).
+Error: L6218E: Undefined symbol DAC_Config (referred from main.o).
+Error: L6218E: Undefined symbol TIM6_Init (referred from main.o).
+Error: L6218E: Undefined symbol init_sine_wave (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 4 error messages.
+
+
+[2023-08-02 19:12:57]	compilation failed at : "c:\Users\86152\Desktop\Github合作项目\STM32F4-1.1\STM32F4-1.1\Hardware\DAC.c", exit code: 1
+command: 
+  "C:\KEIL_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../System -I../Satrt -I../Libarary -I../System/delay -I../System/sys -I../System/usart -I../Hardware -I../DSP_Lib -I../TouchScreen -I../AD7606 -I../DSP_Lib/Include -I../OS -I../Peripheral -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING --cpu Cortex-M4.fp --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\__\Hardware\DAC.o" --no_depend_system_headers --depend ".\build\Target 1\__\Hardware\DAC.d" .\..\Hardware\DAC.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\DAC.h", line 14: Error:  #17: expected a "]"
+  extern u16 sinTable[
+aveSize];
+                      ^
+".\..\Hardware\DAC.h", line 15: Error:  #17: expected a "]"
+  extern u16 cosTable[
+aveSize];
+                      ^
+".\..\Hardware\DAC.c", line 94: Error:  #17: expected a "]"
+  u16 sinTable[
+aveSize];
+               ^
+".\..\Hardware\DAC.c", line 95: Error:  #17: expected a "]"
+  u16 cosTable[
+aveSize];
+               ^
+".\..\Hardware\DAC.c", line 100: Warning:  #177-D: variable "NVIC_InitStructure" was declared but never referenced
+      NVIC_InitTypeDef NVIC_InitStructure;
+                       ^
+".\..\Hardware\DAC.c", line 154: Error:  #65: expected a ";"
+  	DMA_InitStructure.DMA_BufferSize = 
+aveSize;
+  	                                   ^
+".\..\Hardware\DAC.c", line 181: Error:  #65: expected a ";"
+      for(n = 0; n < 
+aveSize; n++)
+                     ^
+".\..\Hardware\DAC.c", line 183: Error:  #18: expected a ")"
+          sinTable[n] = (sin(2 * 
+I * n / 
+aveSize) + 1) * 2047;
+                                          ^
+".\..\Hardware\DAC.c", line 189: Error:  #65: expected a ";"
+      for(n = 0; n < 
+aveSize; n++)
+                     ^
+".\..\Hardware\DAC.c", line 191: Error:  #18: expected a ")"
+          cosTable[n] = (cos(2 * 
+I * n / 
+aveSize) + 1) * 2047;
+                                          ^
+.\..\Hardware\DAC.c: 1 warning, 9 errors
+
+[2023-08-02 19:13:15]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol DACFre_Config (referred from OS_Task.o).
+Error: L6218E: Undefined symbol DAC_Config (referred from main.o).
+Error: L6218E: Undefined symbol TIM6_Init (referred from main.o).
+Error: L6218E: Undefined symbol init_sine_wave (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 4 error messages.
+
+
+[2023-08-02 19:13:52]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol DACFre_Config (referred from OS_Task.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2023-08-02 20:55:41]	compilation failed at : "c:\Users\86152\Desktop\Github合作项目\STM32F4-1.1\STM32F4-1.1\Hardware\DAC.c", exit code: 1
+command: 
+  "C:\KEIL_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../System -I../Satrt -I../Libarary -I../System/delay -I../System/sys -I../System/usart -I../Hardware -I../DSP_Lib -I../TouchScreen -I../AD7606 -I../DSP_Lib/Include -I../OS -I../Peripheral -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING --cpu Cortex-M4.fp --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\__\Hardware\DAC.o" --no_depend_system_headers --depend ".\build\Target 1\__\Hardware\DAC.d" .\..\Hardware\DAC.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\DAC.c", line 102: Error:  #29: expected an expression
+      arr = round((float32_t)(84000000)/(float32_t)
+aveSize/(float32_t));
+                                                                       ^
+".\..\Hardware\DAC.c", line 104: Warning:  #177-D: variable "NVIC_InitStructure" was declared but never referenced
+      NVIC_InitTypeDef NVIC_InitStructure;
+                       ^
+.\..\Hardware\DAC.c: 1 warning, 1 error
+
+[2023-08-03 08:46:52]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6200E: Symbol SysTick_Display_500ms multiply defined (by Proc.o and OS_Task.o).
+Error: L6200E: Symbol SysTick_Display_500ms multiply defined (by main.o and OS_Task.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 2 error messages.
+
+
+[2023-08-03 08:47:18]	[done]
+	build successfully !
+
+[2023-08-03 10:19:23]	[done]
+	build successfully !
+
+[2023-08-03 15:01:54]	[done]
+	build successfully !
+
+[2023-08-03 21:31:48]	compilation failed at : "c:\Users\86152\Desktop\Github合作项目\STM32F4-1.1\STM32F4-1.1\User\main.c", exit code: 1
+command: 
+  "C:\KEIL_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../System -I../Satrt -I../Libarary -I../System/delay -I../System/sys -I../System/usart -I../Hardware -I../DSP_Lib -I../TouchScreen -I../AD7606 -I../DSP_Lib/Include -I../OS -I../Peripheral -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING --cpu Cortex-M4.fp --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\main.o" --no_depend_system_headers --depend ".\build\Target 1\main.d" .\main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\main.c", line 94: Error:  #169: expected a declaration
+  }
+  ^
+.\main.c: 0 warnings, 1 error
+
+[2023-08-03 21:33:15]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol Systick_2s (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2023-08-03 21:34:34]	compilation failed at : "c:\Users\86152\Desktop\Github合作项目\STM32F4-1.1\STM32F4-1.1\User\main.c", exit code: 1
+command: 
+  "C:\KEIL_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../System -I../Satrt -I../Libarary -I../System/delay -I../System/sys -I../System/usart -I../Hardware -I../DSP_Lib -I../TouchScreen -I../AD7606 -I../DSP_Lib/Include -I../OS -I../Peripheral -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING --cpu Cortex-M4.fp --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\main.o" --no_depend_system_headers --depend ".\build\Target 1\main.d" .\main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\main.c", line 48: Error:  #20: identifier "Systick_2s" is undefined
+  		if (Systick_2s == 1)
+  		    ^
+.\main.c: 0 warnings, 1 error
+
+[2023-08-03 21:59:30]	compilation failed at : "c:\Users\86152\Desktop\Github合作项目\STM32F4-1.1\STM32F4-1.1\OS\Proc.c", exit code: 1
+command: 
+  "C:\KEIL_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../System -I../Satrt -I../Libarary -I../System/delay -I../System/sys -I../System/usart -I../Hardware -I../DSP_Lib -I../TouchScreen -I../AD7606 -I../DSP_Lib/Include -I../OS -I../Peripheral -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING --cpu Cortex-M4.fp --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\__\OS\Proc.o" --no_depend_system_headers --depend ".\build\Target 1\__\OS\Proc.d" .\..\OS\Proc.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\OS\Proc.c", line 40: Error:  #20: identifier "SysTick_Location_1s" is undefined
+  			SysTick_Location_1s = 1;
+  			^
+.\..\OS\Proc.c: 0 warnings, 1 error
+
+[2023-08-03 22:06:18]	[done]
+	build successfully !
+
+[2023-08-03 22:43:29]	[done]
+	build successfully !
+
+[2023-08-04 11:47:31]	compilation failed at : "c:\Users\86152\Desktop\Github合作项目\STM32F4-1.1\STM32F4-1.1\OS\OS_Task.c", exit code: 1
+command: 
+  "C:\KEIL_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../System -I../Satrt -I../Libarary -I../System/delay -I../System/sys -I../System/usart -I../Hardware -I../DSP_Lib -I../TouchScreen -I../AD7606 -I../DSP_Lib/Include -I../OS -I../Peripheral -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING --cpu Cortex-M4.fp --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\__\OS\OS_Task.o" --no_depend_system_headers --depend ".\build\Target 1\__\OS\OS_Task.d" .\..\OS\OS_Task.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\OS\OS_Task.c", line 34: Warning:  #177-D: variable "arr" was declared but never referenced
+      static u32 arr;
+                 ^
+".\..\OS\OS_Task.c", line 64: Warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                  SetTextValue(0, 1, Click);
+                                     ^
+".\..\OS\OS_Task.c", line 68: Warning:  #181-D: argument is incompatible with corresponding format string conversion
+                  sprintf(Magnet, "(%s,%d)", xLabel[x], yLabel[y]); // ?甏???系,?谋?x,y;
+                                             ^
+".\..\OS\OS_Task.c", line 69: Warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                  SetTextValue(0, 2, Magnet);
+                                     ^
+".\..\OS\OS_Task.c", line 122: Warning:  #111-D: statement is unreachable
+                  cmd_id = 0;
+                  ^
+".\..\OS\OS_Task.c", line 187: Error:  #169: expected a declaration
+  }
+  ^
+".\..\OS\OS_Task.c", line 296: Warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+.\..\OS\OS_Task.c: 6 warnings, 1 error
+
+[2023-08-04 11:47:49]	[done]
+	build successfully !
+
+[2023-08-04 13:49:47]	compilation failed at : "c:\Users\86152\Desktop\Github合作项目\STM32F4-1.1\STM32F4-1.1\OS\Excel.c", exit code: 1
+command: 
+  "C:\KEIL_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../System -I../Satrt -I../Libarary -I../System/delay -I../System/sys -I../System/usart -I../Hardware -I../DSP_Lib -I../TouchScreen -I../AD7606 -I../DSP_Lib/Include -I../OS -I../Peripheral -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING --cpu Cortex-M4.fp --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\__\OS\Excel.o" --no_depend_system_headers --depend ".\build\Target 1\__\OS\Excel.d" .\..\OS\Excel.c
+   at unify_builder.Program.Main(String[] args_)
+---
+"../DSP_Lib/Include/core_cm4.h", line 112: Warning:  #1215-D: #warning directive: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+        #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+         ^
+".\..\OS\Excel.c", line 16: Error:  #29: expected an expression
+      {{}},
+        ^
+.\..\OS\Excel.c: 1 warning, 1 error
+
+[2023-08-04 13:52:45]	[done]
+	build successfully !
+
+[2023-08-04 13:54:37]	compilation failed at : "c:\Users\86152\Desktop\Github合作项目\STM32F4-1.1\STM32F4-1.1\OS\OS_Task.c", exit code: 1
+command: 
+  "C:\KEIL_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../System -I../Satrt -I../Libarary -I../System/delay -I../System/sys -I../System/usart -I../Hardware -I../DSP_Lib -I../TouchScreen -I../AD7606 -I../DSP_Lib/Include -I../OS -I../Peripheral -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING --cpu Cortex-M4.fp --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\__\OS\OS_Task.o" --no_depend_system_headers --depend ".\build\Target 1\__\OS\OS_Task.d" .\..\OS\OS_Task.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\OS\OS_Task.c", line 36: Warning:  #177-D: variable "arr" was declared but never referenced
+      static u32 arr;
+                 ^
+".\..\OS\OS_Task.c", line 66: Warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                  SetTextValue(0, 1, Click);
+                                     ^
+".\..\OS\OS_Task.c", line 70: Warning:  #181-D: argument is incompatible with corresponding format string conversion
+                  sprintf(Magnet, "(%s,%d)", xLabel[x], yLabel[y]); // ?甏???系,?谋?x,y;
+                                             ^
+".\..\OS\OS_Task.c", line 71: Warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                  SetTextValue(0, 2, Magnet);
+                                     ^
+".\..\OS\OS_Task.c", line 124: Warning:  #111-D: statement is unreachable
+                  cmd_id = 0;
+                  ^
+".\..\OS\OS_Task.c", line 157: Error:  #20: identifier "Sub" is undefined
+              SetTextInt32(0, 9, Sub[1].grid[1][1].min_val, 1, 0);
+                                 ^
+.\..\OS\OS_Task.c: 5 warnings, 1 error
+
+[2023-08-04 13:56:09]	compilation failed at : "c:\Users\86152\Desktop\Github合作项目\STM32F4-1.1\STM32F4-1.1\OS\Excel.c", exit code: 1
+command: 
+  "C:\KEIL_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../System -I../Satrt -I../Libarary -I../System/delay -I../System/sys -I../System/usart -I../Hardware -I../DSP_Lib -I../TouchScreen -I../AD7606 -I../DSP_Lib/Include -I../OS -I../Peripheral -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING --cpu Cortex-M4.fp --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\__\OS\Excel.o" --no_depend_system_headers --depend ".\build\Target 1\__\OS\Excel.d" .\..\OS\Excel.c
+   at unify_builder.Program.Main(String[] args_)
+---
+"../DSP_Lib/Include/core_cm4.h", line 112: Warning:  #1215-D: #warning directive: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+        #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+         ^
+".\..\OS\Excel.c", line 8: Error:  #256: invalid redeclaration of type name "Range" (declared at line 8 of ".\..\OS\Excel.h")
+  } Range;
+    ^
+".\..\OS\Excel.c", line 13: Error:  #256: invalid redeclaration of type name "Variable" (declared at line 12 of ".\..\OS\Excel.h")
+  } Variable;
+    ^
+".\..\OS\Excel.c", line 15: Error:  #147: declaration is incompatible with "Variable Sub[6]" (declared at line 14 of ".\..\OS\Excel.h")
+  Variable Sub[6] = {
+           ^
+.\..\OS\Excel.c: 1 warning, 3 errors
+
+[2023-08-04 13:56:46]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6200E: Symbol Sub multiply defined (by OS_Task.o and Excel.o).
+Error: L6200E: Symbol Sub multiply defined (by main.o and Excel.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 2 error messages.
+
+
+[2023-08-04 13:57:25]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6200E: Symbol Sub multiply defined (by OS_Task.o and Excel.o).
+Error: L6200E: Symbol Sub multiply defined (by main.o and Excel.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 2 error messages.
+
+
+[2023-08-04 14:01:36]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6200E: Symbol Sub multiply defined (by OS_Task.o and Excel.o).
+Error: L6200E: Symbol Sub multiply defined (by main.o and Excel.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 2 error messages.
+
+
+[2023-08-04 14:03:24]	[done]
+	build successfully !
+
+[2023-08-04 14:04:52]	[done]
+	build successfully !
+
+[2023-08-04 14:04:56]	[done]
+	build successfully !
+
+[2023-08-04 14:05:47]	[done]
+	build successfully !
+
+[2023-08-04 14:32:18]	compilation failed at : "c:\Users\86152\Desktop\Github合作项目\STM32F4-1.1\STM32F4-1.1\User\main.c", exit code: 1
+command: 
+  "C:\KEIL_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../System -I../Satrt -I../Libarary -I../System/delay -I../System/sys -I../System/usart -I../Hardware -I../DSP_Lib -I../TouchScreen -I../AD7606 -I../DSP_Lib/Include -I../OS -I../Peripheral -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING --cpu Cortex-M4.fp --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\main.o" --no_depend_system_headers --depend ".\build\Target 1\main.d" .\main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\main.c", line 52: Error:  #165: too few arguments in function call
+          SetTextInt32(0, 1,  Sub[0].grid[0][0].min_val, 0);
+                                                          ^
+".\main.c", line 53: Error:  #165: too few arguments in function call
+  		SetTextInt32(0, 1,  Sub[0].grid[0][0].min_val, 0);
+  		                                                ^
+.\main.c: 0 warnings, 2 errors
+
+[2023-08-04 16:29:51]	[done]
+	build successfully !
+
+[2023-08-04 20:00:46]	compilation failed at : "c:\Users\86152\Desktop\Github合作项目\STM32F4-1.1\STM32F4-1.1\OS\OS_Task.c", exit code: 1
+command: 
+  "C:\KEIL_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../System -I../Satrt -I../Libarary -I../System/delay -I../System/sys -I../System/usart -I../Hardware -I../DSP_Lib -I../TouchScreen -I../AD7606 -I../DSP_Lib/Include -I../OS -I../Peripheral -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING --cpu Cortex-M4.fp --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\__\OS\OS_Task.o" --no_depend_system_headers --depend ".\build\Target 1\__\OS\OS_Task.d" .\..\OS\OS_Task.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\OS\OS_Task.c", line 35: Warning:  #177-D: variable "arr" was declared but never referenced
+      static u32 arr;
+                 ^
+".\..\OS\OS_Task.c", line 71: Warning:  #181-D: argument is incompatible with corresponding format string conversion
+                  sprintf(Magnet, "(%s,%d)", xLabel[x], yLabel[y]); // ?甏???系,?谋?x,y;
+                                             ^
+".\..\OS\OS_Task.c", line 72: Warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                  SetTextValue(0, 2, Magnet);
+                                     ^
+".\..\OS\OS_Task.c", line 125: Warning:  #111-D: statement is unreachable
+                  cmd_id = 0;
+                  ^
+".\..\OS\OS_Task.c", line 143: Warning:  #174-D: expression has no effect
+                  (SUB0 > Sub[0].grid[X][Y].min_val) && (SUB0 < Sub[0].grid[X][Y].max_val) &&
+                  ^
+".\..\OS\OS_Task.c", line 148: Error:  #65: expected a ";"
+                  (SUB5 > Sub[5].grid[X][Y].min_val) && (SUB5 < Sub[5].grid[X][Y].max_val))
+                                                                                          ^
+".\..\OS\OS_Task.c", line 160: Warning:  #12-D: parsing restarts here after previous syntax error
+                  }
+                  ^
+.\..\OS\OS_Task.c: 6 warnings, 1 error
+
+[2023-08-04 20:01:22]	[done]
+	build successfully !
+
+[2023-08-04 20:05:15]	compilation failed at : "c:\Users\86152\Desktop\Github合作项目\STM32F4-1.1\STM32F4-1.1\OS\OS_Task.c", exit code: 1
+command: 
+  "C:\KEIL_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../System -I../Satrt -I../Libarary -I../System/delay -I../System/sys -I../System/usart -I../Hardware -I../DSP_Lib -I../TouchScreen -I../AD7606 -I../DSP_Lib/Include -I../OS -I../Peripheral -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING --cpu Cortex-M4.fp --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\__\OS\OS_Task.o" --no_depend_system_headers --depend ".\build\Target 1\__\OS\OS_Task.d" .\..\OS\OS_Task.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\OS\OS_Task.c", line 6: Error:  #148: variable "xLabels" has already been initialized
+  char *xLabels[] = {"AB", "CD", "EF", "GH", "IJ", "KL"};
+        ^
+".\..\OS\OS_Task.c", line 7: Error:  #148: variable "yLabels" has already been initialized
+  char *yLabels[] = {"1112", "0910", "0708", "0506", "0304", "0102"};
+        ^
+".\..\OS\OS_Task.c", line 35: Warning:  #177-D: variable "arr" was declared but never referenced
+      static u32 arr;
+                 ^
+".\..\OS\OS_Task.c", line 71: Warning:  #181-D: argument is incompatible with corresponding format string conversion
+                  sprintf(Magnet, "(%s,%d)", xLabel[x], yLabel[y]); // ?甏???系,?谋?x,y;
+                                             ^
+".\..\OS\OS_Task.c", line 72: Warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                  SetTextValue(0, 2, Magnet);
+                                     ^
+".\..\OS\OS_Task.c", line 125: Warning:  #111-D: statement is unreachable
+                  cmd_id = 0;
+                  ^
+.\..\OS\OS_Task.c: 4 warnings, 2 errors
+
+[2023-08-04 20:05:37]	[done]
+	build successfully !
+
+[2023-08-05 11:56:18]	[done]
+	build successfully !
+
+[2023-08-05 13:44:37]	[done]
+	build successfully !
+
+[2023-08-05 15:28:05]	[done]
+	build successfully !
+

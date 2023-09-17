@@ -1,0 +1,39 @@
+>>> cc
+
+
+".\..\OS\OS_Task.c", line 35: Warning:  #177-D: variable "arr" was declared but never referenced
+      static u32 arr;
+                 ^
+".\..\OS\OS_Task.c", line 70: Warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+          SetTextValue(0, 1, Click);
+                             ^
+".\..\OS\OS_Task.c", line 74: Warning:  #181-D: argument is incompatible with corresponding format string conversion
+              sprintf(Magnet, "(%s,%d)", xLabel[x], yLabel[y]); // ?ê´??ø±?Ïµ,?Ä±?x,y;
+                                         ^
+".\..\OS\OS_Task.c", line 75: Warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+              SetTextValue(0, 2, Magnet);
+                                 ^
+".\..\OS\OS_Task.c", line 128: Warning:  #111-D: statement is unreachable
+                  cmd_id = 0;
+                  ^
+".\..\OS\OS_Task.c", line 427: Warning:  #1293-D: assignment in condition
+              if (max_sum1  = max_sum2)
+                  ^
+".\..\OS\OS_Task.c", line 339: Warning:  #550-D: variable "maxX" was set but never used
+              uint8_t maxX = 0, maxY = 0;
+                      ^
+".\..\OS\OS_Task.c", line 339: Warning:  #550-D: variable "maxY" was set but never used
+              uint8_t maxX = 0, maxY = 0;
+                                ^
+".\..\OS\OS_Task.c", line 341: Warning:  #550-D: variable "maxX2" was set but never used
+              uint8_t maxX1 = 0, maxY1 = 0, maxX2 = 0, maxY2 = 0;
+                                            ^
+".\..\OS\OS_Task.c", line 341: Warning:  #550-D: variable "maxY2" was set but never used
+              uint8_t maxX1 = 0, maxY1 = 0, maxX2 = 0, maxY2 = 0;
+                                                       ^
+.\..\OS\OS_Task.c: 10 warnings, 0 errors
+
+
+>>> ld
+
+Program Size: Code=10716 RO-data=560 RW-data=2000 ZI-data=57608  

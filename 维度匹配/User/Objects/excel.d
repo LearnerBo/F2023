@@ -1,0 +1,10 @@
+.\objects\excel.o: ..\OS\Excel.c
+.\objects\excel.o: ..\OS\Excel.h
+.\objects\excel.o: ..\DSP_Lib\Include\arm_math.h
+.\objects\excel.o: ..\DSP_Lib\Include\core_cm4.h
+.\objects\excel.o: C:\KEIL_5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\excel.o: ..\Satrt\core_cmInstr.h
+.\objects\excel.o: ..\Satrt\core_cmFunc.h
+.\objects\excel.o: ..\Satrt\core_cm4_simd.h
+.\objects\excel.o: C:\KEIL_5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\excel.o: C:\KEIL_5\ARM\ARMCC\Bin\..\include\math.h

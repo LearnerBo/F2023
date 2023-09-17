@@ -1,0 +1,608 @@
+{
+  "name": "维度匹配",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "AD7606",
+        "files": [
+          {
+            "path": "../AD7606/AD7606.c"
+          },
+          {
+            "path": "../AD7606/AD7606.h"
+          },
+          {
+            "path": "../AD7606/byyc_dma.c"
+          },
+          {
+            "path": "../AD7606/byyc_dma.h"
+          },
+          {
+            "path": "../AD7606/byyc_gpio.c"
+          },
+          {
+            "path": "../AD7606/byyc_gpio.h"
+          },
+          {
+            "path": "../AD7606/byyc_spi.c"
+          },
+          {
+            "path": "../AD7606/byyc_spi.h"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "DSP_Lib",
+        "files": [
+          {
+            "path": "../DSP_Lib/arm_cortexM4lf_math.lib"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Hardware",
+        "files": [
+          {
+            "path": "../Hardware/ADC.c"
+          },
+          {
+            "path": "../Hardware/ADC.h"
+          },
+          {
+            "path": "../Hardware/Cmd.c"
+          },
+          {
+            "path": "../Hardware/Cmd.h"
+          },
+          {
+            "path": "../Hardware/DAC.c"
+          },
+          {
+            "path": "../Hardware/DAC.h"
+          },
+          {
+            "path": "../Hardware/hcsr04.c"
+          },
+          {
+            "path": "../Hardware/hcsr04.h"
+          },
+          {
+            "path": "../Hardware/NTC.c"
+          },
+          {
+            "path": "../Hardware/NTC.h"
+          },
+          {
+            "path": "../Hardware/pwm.c"
+          },
+          {
+            "path": "../Hardware/pwm.h"
+          },
+          {
+            "path": "../Hardware/Rtc.c"
+          },
+          {
+            "path": "../Hardware/Rtc.h"
+          },
+          {
+            "path": "../Hardware/Task.c"
+          },
+          {
+            "path": "../Hardware/Task.h"
+          },
+          {
+            "path": "../Hardware/Time.c"
+          },
+          {
+            "path": "../Hardware/Time.h"
+          },
+          {
+            "path": "../Hardware/uart.c"
+          },
+          {
+            "path": "../Hardware/uart.h"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Library",
+        "files": [
+          {
+            "path": "../Libarary/misc.c"
+          },
+          {
+            "path": "../Libarary/misc.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_adc.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_adc.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_can.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_can.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_crc.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_crc.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_cryp_aes.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_cryp_des.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_cryp_tdes.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_cryp.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_cryp.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_dac.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_dac.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_dbgmcu.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_dbgmcu.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_dcmi.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_dcmi.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_dma.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_dma.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_dma2d.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_dma2d.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_exti.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_exti.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_flash_ramfunc.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_flash_ramfunc.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_flash.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_flash.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_fsmc.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_fsmc.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_gpio.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_gpio.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_hash_md5.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_hash_sha1.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_hash.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_hash.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_i2c.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_i2c.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_iwdg.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_iwdg.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_ltdc.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_ltdc.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_pwr.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_pwr.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_rcc.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_rcc.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_rng.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_rng.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_rtc.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_rtc.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_sai.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_sai.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_sdio.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_sdio.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_spi.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_spi.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_syscfg.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_syscfg.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_tim.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_tim.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_usart.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_usart.h"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_wwdg.c"
+          },
+          {
+            "path": "../Libarary/stm32f4xx_wwdg.h"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "OS",
+        "files": [
+          {
+            "path": "../OS/Excel.c"
+          },
+          {
+            "path": "../OS/Excel.h"
+          },
+          {
+            "path": "../OS/OS_Task.c"
+          },
+          {
+            "path": "../OS/OS_Task.h"
+          },
+          {
+            "path": "../OS/Proc.c"
+          },
+          {
+            "path": "../OS/Proc.h"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Peripheral",
+        "files": [
+          {
+            "path": "../Peripheral/Steering.c"
+          },
+          {
+            "path": "../Peripheral/Steering.h"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Start",
+        "files": [
+          {
+            "path": "../Satrt/startup_stm32f40_41xxx.s"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "System",
+        "files": [
+          {
+            "path": "../System/sys/sys.c"
+          },
+          {
+            "path": "../System/NVIC.c"
+          },
+          {
+            "path": "../System/delay/delay.h"
+          },
+          {
+            "path": "../System/delay/delay.c"
+          },
+          {
+            "path": "../System/Kalman.c"
+          },
+          {
+            "path": "../System/Kalman.h"
+          },
+          {
+            "path": "../System/FFT.c"
+          },
+          {
+            "path": "../System/FFT.h"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "TouchScreen",
+        "files": [
+          {
+            "path": "../TouchScreen/cmd_process.c"
+          },
+          {
+            "path": "../TouchScreen/cmd_process.h"
+          },
+          {
+            "path": "../TouchScreen/cmd_queue.c"
+          },
+          {
+            "path": "../TouchScreen/cmd_queue.h"
+          },
+          {
+            "path": "../TouchScreen/hmi_driver.c"
+          },
+          {
+            "path": "../TouchScreen/hmi_driver.h"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "User",
+        "files": [
+          {
+            "path": "main.c"
+          },
+          {
+            "path": "stm32f4xx_it.c"
+          },
+          {
+            "path": "system_stm32f4xx.c"
+          },
+          {
+            "path": "stm32f4xx.h"
+          },
+          {
+            "path": "main.h"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "13339dbd5394f62d39b71059e39edbf7"
+  },
+  "targets": {
+    "Target 1": {
+      "excludeList": [],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "single",
+        "scatterFilePath": "",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x20000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x10000000",
+                "size": "0x10000"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x80000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          ".",
+          "../System",
+          "../Satrt",
+          "../Libarary",
+          "../System/delay",
+          "../System/sys",
+          "../System/usart",
+          "../Hardware",
+          "../DSP_Lib",
+          "../TouchScreen",
+          "../AD7606",
+          "../DSP_Lib/Include",
+          "../OS",
+          "../Peripheral"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "STM32F40_41xxx",
+          "USE_STDPERIPH_DRIVER",
+          "ARM_MATH_CM4",
+          "__CC_ARM",
+          "ARM_MATH_MATRIX_CHECK",
+          "ARM_MATH_ROUNDING"
+        ]
+      }
+    }
+  },
+  "version": "3.3"
+}
